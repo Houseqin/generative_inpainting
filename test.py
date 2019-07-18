@@ -9,13 +9,13 @@ from inpaint_model import InpaintCAModel
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--image', default='', type=str,
+parser.add_argument('--image', default='/Users/momo/Documents/deepfill/generative_inpainting/examples/celeba/celebahr_patches_165118_input.png', type=str,
                     help='The filename of image to be completed.')
-parser.add_argument('--mask', default='', type=str,
+parser.add_argument('--mask', default='/Users/momo/Documents/deepfill/generative_inpainting/examples/center_mask_256.png', type=str,
                     help='The filename of mask, value 255 indicates mask.')
 parser.add_argument('--output', default='output.png', type=str,
                     help='Where to write output.')
-parser.add_argument('--checkpoint_dir', default='', type=str,
+parser.add_argument('--checkpoint_dir', default='/Users/momo/Documents/deepfill/generative_inpainting/model_logs/release_celeba_256', type=str,
                     help='The directory of tensorflow checkpoint.')
 
 
